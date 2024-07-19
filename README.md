@@ -1,7 +1,7 @@
-# BreadcrumbsSwiftUI-Combine-Movies
+# SwiftUI-Combine-Movies
 
 ## Overview
-BreadcrumbsSwiftUI-Combine-Movies is a SwiftUI-based movie application that leverages Combine for handling asynchronous events and data flow. This project demonstrates the integration of SwiftUI and Combine to create a modern, responsive, and efficient movie browsing experience.
+SwiftUI-Combine-Movies is a SwiftUI-based movie application that leverages Combine for handling asynchronous events and data flow. This project demonstrates the integration of SwiftUI and Combine to create a modern, responsive, and efficient movie browsing experience.
 
 ## Features
 - Browse popular movies
