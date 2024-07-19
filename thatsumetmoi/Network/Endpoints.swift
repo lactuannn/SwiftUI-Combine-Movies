@@ -9,23 +9,21 @@ import Foundation
 
 enum Endpoint {
     case nowPlaying
-    case examplePutOne
+    case searchMovies(query: String)
 
     var path: String {
         switch self {
         case .nowPlaying:
             return "/movie/now_playing?language=en-US&page=1"
-        case .examplePutOne:
-            return ""
+        case .searchMovies(let query):
+            return "/search/movie?query=\(query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")&language=en-US&page=1"
         }
     }
 
     var httpMethod: HttpMethod {
         switch self {
-        case .nowPlaying:
+        case .nowPlaying, .searchMovies:
             return .get
-        default:
-            return .post
         }
     }
 }

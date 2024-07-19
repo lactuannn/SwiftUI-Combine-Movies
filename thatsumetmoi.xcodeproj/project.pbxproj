@@ -20,6 +20,12 @@
 		AAA30EAA2C491EF7001355E6 /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EA92C491EF7001355E6 /* MovieRowView.swift */; };
 		AAA30EAC2C491F18001355E6 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EAB2C491F18001355E6 /* MovieInfoView.swift */; };
 		AAA30EAE2C491F4D001355E6 /* MovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EAD2C491F4D001355E6 /* MovieImageView.swift */; };
+		AAA30EB12C4A0747001355E6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EB02C4A0747001355E6 /* SearchBar.swift */; };
+		AAA30EB32C4A21D5001355E6 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EB22C4A21D5001355E6 /* CircularProgressView.swift */; };
+		AAA30EB82C4A247A001355E6 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EB72C4A247A001355E6 /* AppTabView.swift */; };
+		AAA30EBA2C4A248D001355E6 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EB92C4A248D001355E6 /* DiscoverView.swift */; };
+		AAA30EBD2C4A260D001355E6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EBC2C4A260D001355E6 /* CardView.swift */; };
+		AAA30EC22C4A33F4001355E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA30EC12C4A33F4001355E6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		AAA30EA92C491EF7001355E6 /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
 		AAA30EAB2C491F18001355E6 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
 		AAA30EAD2C491F4D001355E6 /* MovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageView.swift; sourceTree = "<group>"; };
+		AAA30EB02C4A0747001355E6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AAA30EB22C4A21D5001355E6 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		AAA30EB72C4A247A001355E6 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		AAA30EB92C4A248D001355E6 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		AAA30EBC2C4A260D001355E6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AAA30EC12C4A33F4001355E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +81,14 @@
 		AAA30E8A2C490FA1001355E6 /* thatsumetmoi */ = {
 			isa = PBXGroup;
 			children = (
+				AAA30EB52C4A2464001355E6 /* ViewModel */,
 				AAA30EA82C491EDD001355E6 /* View */,
 				AAA30EA52C4917C1001355E6 /* Model */,
 				AAA30E9B2C49104E001355E6 /* Network */,
 				AAA30E8B2C490FA1001355E6 /* thatsumetmoiApp.swift */,
 				AAA30E8F2C490FA3001355E6 /* Assets.xcassets */,
 				AAA30E912C490FA3001355E6 /* Preview Content */,
+				AAA30EC12C4A33F4001355E6 /* Extensions.swift */,
 			);
 			path = thatsumetmoi;
 			sourceTree = "<group>";
@@ -108,13 +122,57 @@
 		AAA30EA82C491EDD001355E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AAA30EAF2C4A0737001355E6 /* Components */,
+				AAA30EB62C4A246A001355E6 /* TabView */,
+				AAA30EB42C4A2459001355E6 /* Home */,
+				AAA30EBB2C4A24DF001355E6 /* Discover */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAA30EAF2C4A0737001355E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AAA30EB02C4A0747001355E6 /* SearchBar.swift */,
+				AAA30EB22C4A21D5001355E6 /* CircularProgressView.swift */,
+				AAA30EBC2C4A260D001355E6 /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AAA30EB42C4A2459001355E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
 				AAA30E8D2C490FA1001355E6 /* HomeView.swift */,
 				AAA30EA92C491EF7001355E6 /* MovieRowView.swift */,
 				AAA30EAD2C491F4D001355E6 /* MovieImageView.swift */,
 				AAA30EAB2C491F18001355E6 /* MovieInfoView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AAA30EB52C4A2464001355E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 				AAA30EA32C4914DC001355E6 /* HomeViewModel.swift */,
 			);
-			path = View;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AAA30EB62C4A246A001355E6 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				AAA30EB72C4A247A001355E6 /* AppTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		AAA30EBB2C4A24DF001355E6 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				AAA30EB92C4A248D001355E6 /* DiscoverView.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,13 +253,19 @@
 			files = (
 				AAA30EAA2C491EF7001355E6 /* MovieRowView.swift in Sources */,
 				AAA30EAE2C491F4D001355E6 /* MovieImageView.swift in Sources */,
+				AAA30EB82C4A247A001355E6 /* AppTabView.swift in Sources */,
 				AAA30E9A2C490FE7001355E6 /* NetworkManager.swift in Sources */,
+				AAA30EBD2C4A260D001355E6 /* CardView.swift in Sources */,
 				AAA30EA42C4914DC001355E6 /* HomeViewModel.swift in Sources */,
 				AAA30E9D2C49105A001355E6 /* APIError.swift in Sources */,
 				AAA30EA72C4917C7001355E6 /* MoviesModel.swift in Sources */,
 				AAA30E8E2C490FA1001355E6 /* HomeView.swift in Sources */,
 				AAA30EAC2C491F18001355E6 /* MovieInfoView.swift in Sources */,
 				AAA30E8C2C490FA1001355E6 /* thatsumetmoiApp.swift in Sources */,
+				AAA30EC22C4A33F4001355E6 /* Extensions.swift in Sources */,
+				AAA30EB12C4A0747001355E6 /* SearchBar.swift in Sources */,
+				AAA30EBA2C4A248D001355E6 /* DiscoverView.swift in Sources */,
+				AAA30EB32C4A21D5001355E6 /* CircularProgressView.swift in Sources */,
 				AAA30E9F2C491071001355E6 /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
